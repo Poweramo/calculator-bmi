@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merienda", cursive;
+}
+
+.app {
+  display: grid;
+  height: 50vh;
+  width: 50vw;
+  border: aqua;
+  background: blanchedalmond;
+  grid-template-areas:
+    "w2"
+    "w"
+    "s2"
+    "s"
+    "c";
+  padding: 15px;
+  position: relative;
+  margin: auto;
+  min-width: 580px;
+  min-height: 350px;
+}
+
+input[type="text"] {
+  height: 35%;
+  width: 10%;
+}
+
+#weight {
+  grid-area: w;
+  font-family: "Merienda", cursive;
+}
+
+#size {
+  grid-area: s;
+  font-family: "Merienda", cursive;
+}
+
+#calculate {
+  grid-area: c;
+  margin: 0px;
+  height: 55%;
+  width: 13%;
+  text-align: center;
+  background: #dcdcdce3;
+  border: 1px solid black;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: "Merienda", cursive;
+}
+
+#calculate:hover {
+  background: linear-gradient(to top, #dcdcdce3 0%, #e2ebf0 100%);
+}
+
+#weight2 {
+  grid-area: w2;
+}
+
+#size2 {
+  grid-area: s2;
+}
